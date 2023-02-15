@@ -1,0 +1,13 @@
+.banner{
+    background-color:#cc0099;
+    width:100%;
+    height:100%;
+    margin-bottom:100px;
+}
+
+.banner-text{
+    text-align:center;
+    top:50px;
+    left:50px;
+    font-family:fantasy;
+}

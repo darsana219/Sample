@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow card">
+    <div class="card body">
+        <h5 class="card title" style="padding-left:15px;padding-bottom:15px;">{{key.name}}</h5>
+        <p style="padding-left:15px;"><b>{{key.priority}}</b></p>
+        <p style="padding-left:15px;"><b>{{key.date}}</b></p>
+        <div class="d-grid d-md-block">
+            <a class="btn btn-danger" href="{% url 'delete' key.id %}" tabindex="-1">Done</a>
+            <a class="btn btn-success" href="{% url 'update' key.id %}" tabindex="-1">Update</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
